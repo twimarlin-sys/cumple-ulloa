@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Ulloa</title>
+  <link rel="stylesheet" href="css de rous.css">
+</head>
+<body>
+  <div class="confetti"></div>
+
+  <div class="container">
+    <h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+
+
+    
+    <!-- Globos -->
+    <div class="balloons">
+      <div class="balloon pink"></div>
+      <div class="balloon yellow"></div>
+      <div class="balloon blue"></div>
+      <div class="balloon mint"></div>
+    </div>
+
+    <!-- Pastel -->
+    <div class="cake">
+      <div class="plate"></div>
+      <div class="layer layer-bottom"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-top"></div>
+      <div class="icing"></div>
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+    </div>
+
+    <h2>Mi mejor amiga ULLOA, te amo muchísimo 💖</h2>
+  </div>
+
+  <script>
+    // 🎊 Confeti animado
+    const confettiContainer = document.querySelector('.confetti');
+    for (let i = 0; i < 120; i++) {
+      const confetto = document.createElement('div');
+      confetto.classList.add('confetto');
+      confetto.style.left = Math.random() * 100 + 'vw';
+      confetto.style.animationDuration = 3 + Math.random() * 5 + 's';
+      confetto.style.backgroundColor = ['#ffb6c1','#ffe066','#a3d8f4','#b2f7ef','#ff9ff3'][Math.floor(Math.random()*5)];
+      confettiContainer.appendChild(confetto);
+    }  
+   </script>
+</body>
+</html>
